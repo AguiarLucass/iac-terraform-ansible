@@ -17,9 +17,15 @@ provider "aws" {
   ami           = "ami-05f991c49d264708f"
   instance_type = "t2.micro"
   key_name = "iac-git"
+  # user_data = <<-EOF
+  #             #!/bin/bash
+  #               cd /home/aguia
+  #               echo "<h1>Feito com terraform</h1>" >index.html
+  #               nohup busybox httpd -f -p 8080 &
+  #               EOF
 
   tags = {
-    Name = "learn-terraform and ansible"
+    Name = "Teste AWS"
   }
 }
 
