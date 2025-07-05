@@ -25,7 +25,7 @@ provider "aws" {
   #               EOF
 
   tags = {
-    Name = "Teste AWS"
+    Name = "Terraform Ansbile Python"
   }
 }
 
